@@ -1,0 +1,25 @@
+# CLI Dependencies
+cli/node_modules/
+
+# CLI Build output
+cli/dist/
+
+# Bun
+bun.lockb
+
+# Ouroboros local config (used for testing)
+.ouroboros/
+.ouroboros-worktrees/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
