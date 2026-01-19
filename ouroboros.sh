@@ -523,8 +523,8 @@ run_brownfield_task() {
         -p "$prompt" 2>&1 | tee "$output_file"
       ;;
     opencode)
-      opencode --output-format stream-json \
-        --approval-mode full-auto \
+      OPENCODE_PERMISSION='{"*":"allow"}' opencode run \
+        --format json \
         "$prompt" 2>&1 | tee "$output_file"
       ;;
     cursor)
